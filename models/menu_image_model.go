@@ -1,7 +1,7 @@
 package models
 
-type MenuImageModel struct {
-	MenuId      uint        `json:"menu_id"`
+type MenuBannerModel struct {
+	MenuID      uint        `json:"menu_id"`
 	MenuModel   MenuModel   `gorm:"foreignKey:MenuID"`
 	BannerID    uint        `json:"banner_id"`
 	BannerModel BannerModel `gorm:"foreignKey:BannerID"`
