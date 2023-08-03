@@ -4,11 +4,14 @@ import (
 	"fmt"
 	"gvb_server/config"
 	"gvb_server/global"
+	"io/fs"
 	"io/ioutil"
 	"log"
 
 	"gopkg.in/yaml.v2"
 )
+
+const ConfigFile = "settings.yaml"
 
 func InitConf() {
 	const ConfigFile = "settings.yaml"
@@ -27,4 +30,18 @@ func InitConf() {
 	// fmt.Println(conf)
 
 	global.Config = conf
+}
+
+func Setyaml() error {
+	byteData, err := yaml.Marshal(global.Config)
+	if err != nil {
+		return err
+	}
+
+	err = ioutil.WriteFile(ConfigFile, byteData, fs.ModePerm)
+	if err != nil {
+		return err
+	}
+	global.Log.Info("配置文件修改成功")
+	return nil
 }
