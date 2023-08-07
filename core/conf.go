@@ -14,7 +14,7 @@ import (
 const ConfigFile = "settings.yaml"
 
 func InitConf() {
-	const ConfigFile = "settings.yaml"
+	//const ConfigFile = "settings.yaml"
 
 	conf := &config.Config{}
 	yamlConf, err := ioutil.ReadFile(ConfigFile)

@@ -32,3 +32,27 @@ site_info:
   bilbil_url: http://www.baidu.com
   gitee_url: http://www.baidu.com
   github_url: http://www.baidu.com
+qq:
+  app_id: xxxxx
+  key: xxxx
+  redirect: xxxx
+qi_niu:
+  enable: false
+  access_key: FFFFFF
+  secret_key: xx
+  bucket: fffffff
+  cdn: fff://fff/
+  zone: ff
+  size: 5
+email:
+  host: 127.0.1.1
+  port: 465
+  user: xxx
+  password: xxx
+  default_from_email: xxx
+  use_ssl: false
+  user_tls: false
+jwt:
+  secret: "3333"
+  expires: 48
+  issuer: "1111"
