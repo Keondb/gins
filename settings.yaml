@@ -56,3 +56,6 @@ jwt:
   secret: "3333"
   expires: 48
   issuer: "1111"
+upload:
+  size: 2
+  path: uploads/file
