@@ -19,6 +19,10 @@ func ComList[T any](model T, option Option) (list []T, count int64, err error) {
 		})
 	}
 
+	if option.Sort == "" {
+		option.Sort = "created_at desc" // 默认排序
+	}
+
 	count = DB.Select("id").Find(&list).RowsAffected
 	if count > 0 {
 		offset := option.Limit * (option.Page - 1)

@@ -8,6 +8,10 @@ type MODEL struct {
 	UpdateAt  time.Time `json:"update_at"`
 }
 
+type RemoveRequest struct {
+	IDList []uint `json:"id_list"`
+}
+
 type PageInfo struct {
 	Page  int    `form:"page"`
 	Key   string `form:"key"`
