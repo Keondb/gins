@@ -37,12 +37,12 @@ qq:
   key: xxxx
   redirect: xxxx
 qi_niu:
-  enable: false
-  access_key: FFFFFF
-  secret_key: xx
-  bucket: fffffff
-  cdn: fff://fff/
-  zone: ff
+  enable: true
+  access_key: 2y1s8dy9PlOn8rbFWQ1GLAD1xbCGpLnmcpJjWmNj
+  secret_key: GlCgh5SzY_4HRz4rFOl7tbGjXolO0Al4SlmHsfCG
+  bucket: hjwzsk
+  cdn: http://s6654wefa.bkt.clouddn.com/
+  zone: cn-east-2
   size: 5
 email:
   host: 127.0.1.1
